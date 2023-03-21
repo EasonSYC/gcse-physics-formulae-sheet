@@ -1,0 +1,490 @@
+\documentclass[8pt]{article}
+\usepackage{allan-eason}
+
+\usepackage{siunitx}
+
+\usetikzlibrary{positioning}
+\usetikzlibrary{svg.path}
+
+\graphicspath{ {./images/} }
+
+\newcommand{\MeanSymb}{\textbf{Meaning of Symbols (and Units):}\ }
+\newcommand{\WordExpl}{\textbf{Word Explanation:}\ }
+\newcommand{\DeriForm}{\textbf{Derived Formulae:}\ }
+\newcommand{\Note}{\textbf{Note:}\ }
+
+
+\newcommand{\Date}{\today}
+\newcommand{\Name}{GCSE Physics Formulae Sheet}
+\newcommand{\Title}{\Name}
+
+\newcommand{\Author}{Yicheng Shao}
+
+\author{\Author}
+\title{\Title}
+\date{Version 1. \Date}
+
+\lhead{\Title}
+
+\begin{document}
+
+	\maketitle
+
+	\tableofcontents
+
+    \section*{What is this and why this?}
+        Most calculation error in GCSE Physics exams is caused by not knowing the formulae, not knowing the derived form and not knowing the meaning of the symbols. I made this document based on the CIE IGCSE Physics (9-1) Syllabus from 2023 onwards. I hope this could help with you IGCSE studies!
+
+        I am also an IGCSE student so errors are inevitable in this document. Feel free to email \href{eason.syc@icloud.com}{eason.syc@icloud.com} to point out any mistakes or submit an issue on the GitHub page!
+
+    \section{Mechanics}
+        \subsection{Kinematics}
+            \begin{enumerate}
+                \item \textbf{Definition of speed:}
+                \[
+                    v = \frac{\Delta s}{\Delta t}.
+                \]
+
+                \MeanSymb \(v\) stands for speed, \unit{\metre\per\second}; \(\Delta s\) stands for distance elapsed, \unit{\metre}; \(\Delta t\) stands for time elapsed, \unit{\second}.
+
+                \WordExpl Speed equals distance covered per unit time.
+
+                \DeriForm \(\Delta s = v \Delta t, t = \frac{\Delta s}{v}\).
+
+                \Note Speed and distance are both scalars.
+
+                \item \textbf{Definition of velocity:}
+                \[
+                    \vect{v} = \frac{\Delta \vect{s}}{\Delta t}.
+                \]
+
+                \MeanSymb \(\vect{v}\) stands for velocity, \unit{\metre\per\second}; \(\Delta \vect{s}\) stands for displacement, \unit{\metre}; \(\Delta t\) stands for time elapsed, \unit{\second}.
+
+                \WordExpl Velocity equals the displacement over the time elapsed.
+
+                \DeriForm \(\Delta \vect{s} = \vect{v} \Delta t, \Delta t = \frac{\Delta \vect{s}}{\vect{v}}\).
+
+                \Note Velocity and displacement are both vectors.
+            
+                \item \textbf{Definition of average speed:}
+                \[
+                    \bar{v} = \frac{s}{t}
+                \]
+
+                \MeanSymb \(\bar{v}\) stands for average speed, \unit{\metre\per\second}; \(s\) stands for distance, \unit{\metre}; \(t\) stands for time, \unit{\second}.
+
+                \WordExpl Average speed equals the total distance over total time.
+
+                \DeriForm \(s = \bar{v}t, t = \frac{s}{\bar{v}}\).
+
+                \Note Difference between average speed and speed: one is over a period, another is at a certain time.
+
+                \item \textbf{Definition of acceleration:}
+                \[
+                    \vect{a} = \frac{\Delta \vect{v}}{\Delta t}.
+                \]
+
+                \MeanSymb \(\vect{a}\) stands for acceleration, \unit{\metre\per\second\squared}; \(\Delta \vect{v}\) stands for change in velocity, \unit{\metre\per\second}; \(\Delta t\) stands for time elapsed, \unit{\second}.
+
+                \WordExpl Acceleration is the rate of change in velocity.
+
+                \DeriForm \(\Delta \vect{v} = \Delta t \vect{a}, \Delta t = \frac{\Delta \vect{v}}{\vect{a}}\),
+                \[
+                    \vect{v} = \vect{v_0} + \vect{a}t
+                \]
+
+                \Note Acceleration is (usually) a vector.
+
+            \end{enumerate}
+
+            \textbf{You are not expected to know the \(suvat\) equation, but please draw a \(\vect{v}-t\) graph if necessary.}
+
+        \subsection{Statics and Energy}
+            \begin{enumerate}
+                \item \textbf{Weight:}
+                \[
+                    \vect{W} = m \vect{g}.
+                \]
+
+                \MeanSymb \(\vect{W}\) stands for the weight (a force), \unit{\newton}; \(m\) stands for mass, \unit{\kilogram}; \(\vect{g}\) stands for gravitational acceleration or gravitational field strength, \unit{\metre\per\second\squared} or \unit{\newton\per\kilogram}.
+
+                \WordExpl The gravitational acceleration is the gravitational force (weight) per unit time (and equivilant to gravitational acceleration).
+
+                \DeriForm \(\vect{g} = \frac{\vect{W}}{m}, m = \frac{\vect{W}}{\vect{g}}\).
+
+                \Note Weight and gravitational acceleration/gravitational field strength are both vectors.
+
+                \item \textbf{Density:}
+                \[
+                    \rho = \frac{m}{V}
+                \]
+
+                \MeanSymb \(\rho\) stands for density, \unit{\kilogram \per \metre\cubed}; \(m\) stands for mass, \unit{\kilogram}; \(V\) stands for volume, \unit{\metre\cubed}.
+
+                \WordExpl The density is mass per unit volume.
+
+                \DeriForm \(m = \rho V, V = \frac{\rho}{m}\).
+
+                \Note Density is a scalar, and it is a property of a material (usually), which could also be determined floating and sinking.
+                
+                \item \textbf{Definition of pressure (General):}
+                \[
+                    p = \frac{F}{A}.
+                \]
+
+                \MeanSymb \(p\) stands for pressure, \unit{\pascal} or \unit{\newton\per\metre\squared}; \(F\) stands for the magnitude of the normal force, \unit{\newton}; \(A\) stands for area, \unit{\metre\squared}.
+
+                \WordExpl Pressure is the magnitude of force excerted per unit area.
+
+                \DeriForm \(F = pA, A = \frac{F}{p}\).
+
+                \Note Though force is a vector, pressure is a scalar. This will be more significant in the next formula.
+
+                \item \textbf{Pressure (Liquid and Prism):}
+                \[
+                    \Delta p = \rho g \Delta h.
+                \]
+
+                \MeanSymb \(\Delta p\) stands for change in pressure, \unit{\pascal}; \(\rho\) stands for the density, \unit{\kilogram\per\metre\cubed}; \(g\) stands for gravitational acceleration, \unit{\newton \per \kilogram}; \(\Delta h\) stands for difference in depth/height, \unit{\metre}.
+
+                \WordExpl The change in the pressure (over a depth) is the gravitational acceleration times the density times the change in depth.
+
+                \DeriForm \(\rho = \frac{\Delta p}{g \Delta h}, \Delta h = \frac{\Delta p}{\rho g}\).
+
+                \Note Pressure is excerted to all directions in the liquid.
+
+                \item \textbf{Definition of work:}
+                \[
+                    W = \Delta E = \vect{F} \cdot \vect{d} = Fd \cos \theta.
+                \]
+
+                \MeanSymb \(W\) stands for work, \unit{\joule} or \unit{\newton \metre}; \(\Delta E\) stands for change in energy, \unit{\joule}; \(\vect{F}\) stands for force, \unit{\newton}; \(\vect{d}\) stands for displacement, \unit{\metre}; \(\theta\) stands for the angle between the force and the direction of travel, \unit{\degree} or \unit{\radian} (note that radianis just a dimension of 1).
+
+                \WordExpl Work is energy transferred. Work is the force times distance travelled in the direction of the force.
+
+                \DeriForm \(F = \frac{W}{d \cos \theta}, d = \frac{W}{F \cos \theta}\).
+
+                \Note Usually the \(\cos \theta\) can be ignored, but please remember the distance travelled in the direction of the force.
+
+                \item \textbf{Kinetic energy:}
+                \[
+                    E_k = \frac{1}{2} m v^2.
+                \]
+
+                \MeanSymb \(E_k\) stands for kinetic energy, \unit{\joule}; \(m\) stands for mass, \unit{\kilogram}; \(v\) stands for speed or magnitude of velocity, \unit{\metre\per\second}.
+
+                \WordExpl The kinetic energy is half the mass times energy squared.
+                
+                \DeriForm \(v = \sqrt{\frac{2 E_k}{m}}\).
+
+                \Note Energy is always a scalar. It makes no difference using speed or dot product of velocity here. Note that \(\Delta E_k \neq \frac{1}{2} m \Delta v^2\).
+
+                \item \textbf{Gravitational potential energy (in a uniform gravitational field):}
+                \[
+                    \Delta E_p = m g \Delta h.
+                \]
+
+                \MeanSymb \(E_p\) stands for gravitational potential energy, \unit{\joule}; \(m\) stands for mass, \unit{\kilogram}; \(g\) stands for gravitational acceleration (magnitude), \unit{\metre\per\second\squared}; \(\Delta h\) stands for change in height, \unit{\metre}.
+
+                \WordExpl The change in gravitational potential energy is the mass times the gravitational field strength times change in the height.
+
+                \DeriForm \(m = \frac{\Delta E_p}{g \Delta h}, g = \frac{\Delta E_p}{m \Delta h}, \Delta h = \frac{\Delta E_p}{mg} = \frac{\Delta E_p}{W}, E_p = W \Delta h\).
+
+                \Note This is the formula stands for the one in a uniform gravitational field, the one in more complexd gravitational fields (e.g. Newtonian Gravity and Einstein General Relativity).
+
+                \item \textbf{Definition of power:}
+                \[
+                    P = \frac{\Delta E}{\Delta t}.
+                \]
+
+                \MeanSymb \(P\) stands for power, \unit{\watt} or \unit{\joule\per\second}; \(\Delta E\) stands for energy transferred \(= W\), \unit{\joule}; \(\Delta t\) stands for time elapsed, \unit{\second}.
+
+                \WordExpl Power is the rate of energy transferred.
+
+                \DeriForm \(P = \frac{W}{\Delta t}, \Delta E = W = P \Delta t, t = \frac{W}{P} = \frac{\Delta E}{P}\),
+                \[
+                    P = \vect{F} \cdot \vect{v}.
+                \]
+
+                \Note This formula also works for electrical power.
+
+                \item \textbf{Efficiency:}
+                \[
+                    \eta = \frac{P_{\text{useful}}}{P_{\text{total}}}.
+                \]
+
+                \MeanSymb \(\eta\) stands for efficiency, dimension of \(1\) without unit; \(P_{\text{useful}}\) stands for useful power (output), \unit{\watt}; \(P_{\text{total}}\) stands for total power (input), \unit{\watt}.
+
+                \WordExpl The efficiency is the percentage/proportion of useful energy/power output to total energy.power input.
+
+                \DeriForm
+                \[
+                    \eta = \frac{W_{\text{useful}}}{W_{\text{total}}}.
+                \]
+
+                \Note You can times \(100\%\) which is basically \(1\) to get a percentage.
+
+            \end{enumerate}
+
+        \subsection{Effect of Forces}
+            \begin{enumerate}
+                \item \textbf{Definition of momentum:}
+                \[
+                    \vect{p} = m\vect{v}.
+                \]
+
+                \MeanSymb \(\vect{p}\) stands for momentum, \unit{\kilogram \metre \per \second}; \(m\) stands for mass, \unit{\kilogram}; \(\vect{v}\) stands for velocity, \unit{\metre\per\second}.
+
+                \WordExpl Momentum is the product of mass and its velocity.
+
+                \DeriForm \(m = \frac{\vect{p}}{\vect{v}}, \vect{v} = \frac{\vect{p}}{m}\).
+
+                \Note Momentum itself is a vector and has a direction.
+                
+                \item \textbf{Newton's 2nd Law:}
+                \[
+                    \vect{F} = \frac{\Delta \vect{p}}{\Delta t}.
+                \]
+
+                \MeanSymb \(\vect{F}\) stands for force, \unit{\newton}; \(\Delta \vect{p}\) stands for change in momentum, \unit{\kilogram \metre \per \second}; \(\Delta t\) stands for time elapsed, \unit{\second}.
+
+                \WordExpl Force is equal to the rate of change in momentum.
+
+                \DeriForm \(\Delta \vect{p} = \vect{F} \Delta t, \Delta t = \frac{\Delta \vect{p}}{\vect{F}}\),
+                \[
+                    \vect{F} = m \vect{a}.
+                \]
+
+                \Note This is a very important equation in physics, and it could lead to discussions about inertial mass/gravitational mass, Lagrange -- d'Almbert's Principle (turning non-inertial frames into inertial ones), special relativity, etc.
+
+                \item \textbf{Impulse:}
+                \[
+                    \vect{I} = \Delta \vect{p}.
+                \]
+
+                \MeanSymb \(\vect{I}\) stands for impulse, \unit{\kilogram \metre \per \second}; \(\Delta \vect{p}\) stands for change in momentum, \unit{\kilogram \metre \per \second}.
+
+                \WordExpl Impulse is equal to the change in momentum.
+
+                \DeriForm The following is derived from Newton's 2nd Law:
+                \[
+                    \vect{I} = \vect{F} \Delta t.
+                \]
+
+                \Note This is only meaningful if momentum is conserved - just like work and energy.
+
+                \item \textbf{Moment:}
+                \[
+                    \vect{M} = \vect{r} \times \vect{F}.
+                \]
+
+                \MeanSymb \(\vect{M}\) stands for moment (of a force), \unit{\newton \metre} (according to SI standards, we don't write it as a \unit{\joule}); \(\vect{r}\) stands for the position vector of the force, \unit{\metre}; \(\vect{F}\) stands for the force, \unit{\newton}.
+
+                \WordExpl The magnitude of the moment of a force is equal to the magnitude of the force times the perpendicular distance between the pivot and the line of action of the force.
+
+                \DeriForm To be simple, denote \(d\) as the perpendicular distance between the pivot and the line of action of the force, \unit{\metre}, then we have \(M = Fd, F = \frac{M}{d}, d = \frac{M}{F}\).
+
+                \Note I wrote this in terms of vector and their cross product just for the sake of science but this is not required at all.
+
+                \item \textbf{Hooke's Law:}
+                \[
+                    \vect{F} = k \vect{x}.
+                \]
+
+                \MeanSymb \(\vect{F}\) stands for force, \unit{\newton}; \(k\) stands for the spring constant, \unit{\newton \per \metre}; \(\vect{x}\) stands for the extension (vector).
+
+                \WordExpl The force to extend or compress a spring (within the limit of linearlity) is perpendicular to the extension.
+
+                \DeriForm \(k = \frac{\vect{F}}{\vect{x}}, \vect{x} = \frac{\vect{F}}{k}\).
+
+                \Note Remember to use extension for the \(\vect{x}\) not the total length.
+            \end{enumerate}
+
+    \section{Thermal Physics}
+        \subsection{Ideal Gas}
+            \begin{enumerate}
+                \item \textbf{Boyle's Law:}
+                \[
+                    pV = \mathrm{const.}
+                \]
+
+                \MeanSymb \(p\) stands for pressure, \unit{\pascal}; \(V\) stands for volume, \unit{\metre \cubed}.
+
+                \WordExpl The pressure of a gas is inversly proportional to its volume given that its temperature remains the same.
+
+                \DeriForm \(p_1 V_1 = p_2 V_2\).
+
+                \Note This only remains true if temperature is a constant.
+                
+                \item \textbf{Charles's Law:} (it popped out on the MTR, and stating this will get you a mark!)
+                \[
+                    \frac{V}{T} = \mathrm{const.}
+                \]
+
+                \MeanSymb \(V\) stands for volume, \unit{\metre \cubed}; \(T\) stands for temperature, \unit{\kelvin}.
+
+                \WordExpl The volume of a gas is directly proportional to its temperature given that its pressure remains the same.
+
+                \DeriForm \(\frac{V_1}{T_1} = \frac{V_2}{T_2}, \frac{V_1}{V_2} = \frac{T_1}{T_2}\).
+
+                \Note This only remains true if pressure is a constant.
+                
+                \item \textbf{Gay-Lussac's Law:} (just for the sake of knowing it)
+                \[
+                    \frac{p}{T} = \mathrm{const.}
+                \]
+
+                \MeanSymb \(p\) stands for pressure, \unit{\pascal}; \(T\) stands for temperature, \unit{\kelvin}.
+
+                \WordExpl The pressure of a gas is directly proportional to its temperature given that its volume remains the same.
+
+                \DeriForm \(\frac{p_1}{T_1} = \frac{p_2}{T_2}, \frac{p_1}{p_2} = \frac{T_1}{T_2}\).
+
+                \Note This only remains true if volume is a constant.
+
+                \item \textbf{Avogardo's Equation (Chemistry!):}
+                
+                No that's not my work.
+
+                \item \textbf{Ideal Gas Law:} (a.k.a. Clapeyron Equation, the boss, just for reference)
+                \[
+                    pV = nRT = Nk_{B}T
+                \]
+
+                \MeanSymb \(p\) stands for pressure, \unit{\pascal}; \(V\) stands for volume, \unit{\metre\cubed}; \(n\) stands for moles, \unit{\mole}; \(R\) stands for the ideal gas constant (which is equal to the Boltzmann constant times the Avogardo constant), \(R = k_B N_A = \qty{8.31}{\joule \per \kelvin \per \mole}\); \(T\) stands for the temperature, \unit{\kelvin}; \(N\) stands for the number of gas molecules, no unit; \(k_B\) stands for the Boltzmann constant, \(k_B = \qty{1.38 e -34}{\joule \per \kelvin}\).
+
+                \Note This is really the boss but it is A-Level knowledge, so just for the sake of knowing it.
+                
+                \item \textbf{van der Waals Equation (a more boss equation)}
+                
+                No I won't talk about this, this is too much for now.
+            \end{enumerate}
+
+        \subsection{Temperature}
+            \begin{enumerate}
+                \item \textbf{Conversion between kelvin and degree celsius:}
+                \[
+                    T \unit{\per \kelvin} = \theta \unit{\per \degreeCelsius} + 273(.15).
+                \]
+
+                \MeanSymb \(T\) stands for (thermodynamic) temperature in kelvin, \unit{\kelvin}; \(\theta\) stands for temperature in degree celsius, \unit{\degreeCelsius}.
+
+                \WordExpl The temperature in kelvin is equal to the temperature in degree celsius plus \(273.15\).
+
+                \DeriForm \(\theta \unit{\per \degreeCelsius} = T \unit{\per \kelvin} - 273(.15)\).
+
+                \Note Please note that in all the ideal gas equations you need to use the thermodynamic temperature, but in the following equation you do not need to convert, as change in one degree celsius equals change in one kelvin.
+
+                \item \textbf{Thermal capacity:}
+                \[
+                    Q = m c \Delta T.
+                \]
+
+                \MeanSymb \(Q\) stands for thermal energy transferred, \unit{\joule}; \(m\) stands for mass, \unit{\kilogram}; \(c\) stands for thermal capacity, \unit{\joule \per \kilogram \per \kelvin} or \unit{\joule \per \kilogram \per \degreeCelsius}; \(\Delta T\) stands for change in temperature, \unit{\kelvin} or \unit{\degreeCelsius}.
+
+                \WordExpl The thermal capacity is defined as the heat energy transferred per unit mass per unit change in temperature.
+
+                \DeriForm \(m = \frac{Q}{c \Delta T}, c = \frac{Q}{m \Delta T}, \Delta T = \frac{Q}{mc}\).
+
+                \Note Thermal capacity is a property of a material. It doesn't matter whether you calculate with degrees celsius or kelvin, but make sure you use the same unit to calculate the change in temperature.
+
+                \item \textbf{Latent heat:} (old syllabus, but it popped up before!)
+                \[
+                    Q = ml.
+                \]
+
+                \MeanSymb \(Q\) stands for thermal energy transferred, \unit{\joule}; \(m\) stands for mass, \unit{\kilogram}; \(l\) stands for specific latent heat, \unit{\joule \per \kilogram}.
+
+                \WordExpl The latent heat is defined as the heat energy transferred per unit mass to convert a substance from one state to another state.
+
+                \DeriForm \(m = \frac{Q}{l}, l = \frac{Q}{m}\).
+
+                \Note Latent heat is a property of a material and the state conversion it is in.
+                
+            \end{enumerate}
+
+    \section{Waves}
+        \subsection{Waves}
+            \begin{enumerate}
+                \item \textbf{Frequency and Period:}
+                \[
+                    f = \frac{1}{T}.
+                \]
+
+                \MeanSymb \(f\) stands for the frequency, \unit{\hertz} or \unit{\per \second}; \(T\) stands for the period, \unit{\second}.
+
+                \WordExpl Frequency is the reciprocal of the period.
+
+                \DeriForm \(fT = 1, T = \frac{1}{f}\).
+
+                \Note This is true for all waves.
+
+                \item \textbf{The wave equation:}
+                \[
+                    v = f \lambda.
+                \]
+
+                \MeanSymb \(v\) stands for the wavespeed, \unit{\metre \per \second}; \(f\) stands for the frequency, \unit{\hertz}; \(\lambda\) stands for the wavelength, \unit{\metre}.
+
+                \WordExpl The wavespeed of a wave is equal to its frequency times its wavelength.
+
+                \DeriForm \(f = \frac{v}{\lambda}, \lambda = \frac{v}{f}\).
+
+                \Note The frequency of a wave will not change (Doppler Effect! but that's observation), so usually we can just say \(\lambda \propto v\).
+            \end{enumerate}
+
+        \subsection{Optics}
+            \begin{enumerate}
+                \item \textbf{Refractive index:}
+                \[
+                    n = \frac{c}{v}
+                \]
+
+                \MeanSymb
+
+                \WordExpl
+
+                \DeriForm
+
+                \Note As speed of light in vacuum is the fastest thing in the world (special relativity!), \(n\) is always no smaller than one.
+                
+                \item \textbf{Snell's law:}
+                \[
+                    n_1 \sin \theta_1 = n_2 \sin \theta_2.
+                \]
+
+                \MeanSymb
+
+                \WordExpl
+
+                \DeriForm
+
+                \Note This can be derived from the Fermat's Principle, or maybe, least action principle!
+                
+                \item \textbf{Critical angle:}
+                \[
+                    \sin c = \frac{1}{n}.
+                \]
+
+                \MeanSymb
+
+                \WordExpl
+
+                \DeriForm
+
+                \Note This is a special case of the general Snell's law where a \(theta\) equals \(90 \degree\) and its corresponding \(n\) equals \(1\).
+            \end{enumerate}
+
+    \section{Electricity}
+        \subsection{Electrical Quantities}
+
+        \subsection{Circuits}
+
+        \subsection{Electromagnetism}
+
+    \section{Space Physics}
+        \subsection{Orbits}
+
+        \subsection{Hubble's Constant}
+
+\end{document}
