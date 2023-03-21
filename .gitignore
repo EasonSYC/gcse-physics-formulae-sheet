@@ -262,7 +262,7 @@ acs-*.bib
 *.brf
 
 # knitr
-*-concordance.tex
+# *-concordance.tex
 # TODO Uncomment the next line if you use knitr and want to ignore its generated tikz files
 # *.tikz
 *-tikzDictionary
@@ -316,7 +316,7 @@ _minted*
 # sympy
 *.sout
 *.sympy
-sympy-plots-for-*.tex/
+# sympy-plots-for-*.tex/
 
 # pdfcomment
 *.upa
@@ -395,7 +395,7 @@ TSWLatexianTemp*
 *.el
 
 # expex forward references with \gathertags
-*-tags.tex
+# *-tags.tex
 
 # standalone packages
 *.sta
