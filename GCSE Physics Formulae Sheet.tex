@@ -23,9 +23,9 @@
 
 \author{\Author}
 \title{\Title}
-\date{Version 1.0.1. \Date}
+\date{Version for In-School Distribution 1.0.1. \Date}
 
-\lhead{\Name}
+\lhead{\Name\ \tiny{In-School Distribution Only}}
 
 \begin{document}
 
@@ -36,9 +36,11 @@
     \section*{What is this and why this?}
         Most calculation error in GCSE Physics exams is caused by not knowing the formulae, not knowing the derived form and not knowing the meaning of the symbols. I made this document based on the CIE IGCSE Physics (9-1) Syllabus from 2023 onwards. I hope this could help with your IGCSE studies!
 
-        I am also an IGCSE student so errors are inevitable in this document. Feel free to email \href{eason.syc@icloud.com}{eason.syc@icloud.com} to point out any mistakes or submit an issue on the GitHub page!
+        I am also an IGCSE student so errors are inevitable in this document. Feel free to email \href{yicheng\_shao@oxcoll.com}{yicheng\_shao@oxcoll.com} to point out any mistakes or submit an issue on the GitHub page!
 
         P.S. I want to try my best to include quantitative formulae for qualitative requirements at GCSE, but they usually require more Mathematical tools so it is normal to have unexpected symbols.
+
+        This is the simplified version with only the formulae you are required to use to calculate. Vector notations are still present just for the sake of science.
 
     \section{Mechanics}
         \subsection{Kinematics}
@@ -301,80 +303,22 @@
                 \DeriForm \(k = \frac{\vect{F}}{\vect{x}}, \vect{x} = \frac{\vect{F}}{k}\).
 
                 \Note Remember to use extension for the \(\vect{x}\) not the total length.
-
-                \item \textbf{Circular Motion:} (qualitative explanation required)
-                \[
-                    F = \frac{mv^2}{r}.
-                \]
-
-                \MeanSymb \(F\) stands for the centripetal force (i.e.) the force pointing to the centre of the circular motion (perpendicular to velocity), \unit{\newton}; \(m\) stands for mass, \unit{\kilogram}; \(v\) stands for speed, \unit{\metre\per\second}; \(r\) stands for radius, \unit{\metre}.
-
-                \WordExpl The centripetal force for a circular motion is proportional to its mass, the square of its speed, and inversely proportional to its radius.
-
-                \DeriForm \(r = \frac{mv^2}{F} m = \frac{Fr}{v^2}, v = \sqrt{\frac{Fr}{m}}\).
-
-                \Note The quantitative form is not required but you are required to know the qualitative aspect. Circular motion is accelerating!
             \end{enumerate}
 
     \section{Thermal Physics}
         \subsection{Ideal Gas}
-            \begin{enumerate}
-                \item \textbf{Boyle's Law:}
-                \[
-                    pV = \mathrm{const.}
-                \]
+            \textbf{Boyle's Law:}
+            \[
+                pV = \mathrm{const.}
+            \]
 
-                \MeanSymb \(p\) stands for pressure, \unit{\pascal}; \(V\) stands for volume, \unit{\metre \cubed}.
+            \MeanSymb \(p\) stands for pressure, \unit{\pascal}; \(V\) stands for volume, \unit{\metre \cubed}.
 
-                \WordExpl The pressure of a gas is inversely proportional to its volume given that its temperature remains the same.
+            \WordExpl The pressure of a gas is inversely proportional to its volume given that its temperature remains the same.
 
-                \DeriForm \(p_1 V_1 = p_2 V_2\).
+            \DeriForm \(p_1 V_1 = p_2 V_2\).
 
-                \Note This only remains true if the temperature is constant.
-                
-                \item \textbf{Charles's Law:} (it popped out on the MTR, and stating this will get you a mark!)
-                \[
-                    \frac{V}{T} = \mathrm{const.}
-                \]
-
-                \MeanSymb \(V\) stands for volume, \unit{\metre \cubed}; \(T\) stands for temperature, \unit{\kelvin}.
-
-                \WordExpl The volume of a gas is directly proportional to its temperature given that its pressure remains the same.
-
-                \DeriForm \(\frac{V_1}{T_1} = \frac{V_2}{T_2}, \frac{V_1}{V_2} = \frac{T_1}{T_2}\).
-
-                \Note This only remains true if pressure is a constant.
-                
-                \item \textbf{Gay-Lussac's Law:} (just for the sake of knowing it)
-                \[
-                    \frac{p}{T} = \mathrm{const.}
-                \]
-
-                \MeanSymb \(p\) stands for pressure, \unit{\pascal}; \(T\) stands for temperature, \unit{\kelvin}.
-
-                \WordExpl The pressure of a gas is directly proportional to its temperature given that its volume remains the same.
-
-                \DeriForm \(\frac{p_1}{T_1} = \frac{p_2}{T_2}, \frac{p_1}{p_2} = \frac{T_1}{T_2}\).
-
-                \Note This only remains true if the volume is a constant.
-
-                \item \textbf{Avogardo's Equation (Chemistry!):}
-                
-                No that's not my work.
-
-                \item \textbf{Ideal Gas Law:} (a.k.a. Clapeyron Equation, the boss, just for reference)
-                \[
-                    pV = nRT = Nk_{B}T
-                \]
-
-                \MeanSymb \(p\) stands for pressure, \unit{\pascal}; \(V\) stands for volume, \unit{\metre\cubed}; \(n\) stands for moles, \unit{\mole}; \(R\) stands for the ideal gas constant (which is equal to the Boltzmann constant times the Avogardo constant), \(R = k_B N_A = \qty{8.31}{\joule \per \kelvin \per \mole}\); \(T\) stands for the temperature, \unit{\kelvin}; \(N\) stands for the number of gas molecules, no unit; \(k_B\) stands for the Boltzmann constant, \(k_B = \qty{1.38 e -34}{\joule \per \kelvin}\).
-
-                \Note This is the boss but it is A-Level knowledge, so just for the sake of knowing it.
-                
-                \item \textbf{van der Waals Equation (a more boss equation)}
-                
-                No, I won't talk about this, this is too much for now.
-            \end{enumerate}
+            \Note This only remains true if the temperature is constant.
 
         \subsection{Temperature}
             \begin{enumerate}
@@ -403,19 +347,6 @@
                 \DeriForm \(m = \frac{Q}{c \Delta T}, c = \frac{Q}{m \Delta T}, \Delta T = \frac{Q}{mc}\).
 
                 \Note Thermal capacity is a property of a material. It doesn't matter whether you calculate with degrees Celsius or kelvin, but make sure you use the same unit to calculate the temperature change.
-
-                \item \textbf{Latent heat:} (old syllabus, but it popped up before!)
-                \[
-                    Q = ml.
-                \]
-
-                \MeanSymb \(Q\) stands for thermal energy transferred, \unit{\joule}; \(m\) stands for mass, \unit{\kilogram}; \(l\) stands for specific latent heat, \unit{\joule \per \kilogram}.
-
-                \WordExpl The latent heat is defined as the heat energy transferred per unit mass to convert a substance from one state to another state.
-
-                \DeriForm \(m = \frac{Q}{l}, l = \frac{Q}{m}\).
-
-                \Note Latent heat is a property of a material and the state conversion it is in.
                 
             \end{enumerate}
 
@@ -588,19 +519,6 @@
 
                 \Note This is a direct corollary from the conservation of charge.
 
-                \item \textbf{Kirchoff's Second Law:} (may be useful)
-                \[
-                    \sum V = \sum E.
-                \]
-
-                \MeanSymb \(\sum\) stands for the sum; \(V\) stands for the p.d., \unit{\volt}; \(E\) stands for the e.m.f., \unit{\volt}.
-
-                \WordExpl The sum of the p.d. is equal to the sum of the e.m.f. in a closed loop.
-
-                \DeriForm \(\sum V = 0\) if no e.m.f., \(\sum E = 0\) if no p.d.
-
-                \Note This is a direct corollary from the conservation of energy. Notice that the loop itself is 'directional' -- that is, some 'batteries' may act as a p.d. rather than an e.m.f. on the loop.
-
                 \item \textbf{Parallel Circuit Laws:}
                 \begin{align*}
                     I &= I_1 + I_2 + \cdots + I_n,\\
@@ -633,173 +551,23 @@
                 \]
 
                 \Note The current law follows from Kirchoff's Current Law and the voltage follows from the Voltage Law, the resistance result is a corollary of them.
-
-                \item \textbf{Resistance v.s. Length and Area}:
-                \[
-                    R = \frac{\rho l}{A}.
-                \]
-
-                \MeanSymb \(R\) stands for the resistance, \unit{\ohm}; \(\rho\) stands for the electrical resistivity, \unit{\ohm \metre}; \(l\) stands for the length, \unit{\metre}; \(A\) stands for the cross-sectional area, \unit{\metre\squared}.
-
-                \WordExpl The resistance of a resistor is proportional to its length and inversely proportional to the area.
-
-                \DeriForm \(\rho = \frac{RA}{l}, A = \frac{\rho l}{R}, l = \frac{RA}{A}\).
-
-                \Note This formula and its calculations are not required. However, you need to know everything apart from the \(\rho\)!
             \end{enumerate}
 
         \subsection{Electromagnetism}
-            \begin{enumerate}
-                \item \textbf{Transformer:}
-                \[
-                    \frac{V_1}{V_2} = \frac{N_1}{N_2}.
-                \]
-                \MeanSymb \(V_1\) stands for the primary coil voltage, \unit{\volt}; \(V_2\) stands for the secondary coil voltage, \unit{\volt}; \(N_1\) stands for the number of coils on the primary coil, dimensionless; \(N_2\) stands for the number of coils on the secondary coil, dimensionless.
+            \textbf{Transformer:}
+            \[
+                \frac{V_1}{V_2} = \frac{N_1}{N_2}.
+            \]
+            \MeanSymb \(V_1\) stands for the primary coil voltage, \unit{\volt}; \(V_2\) stands for the secondary coil voltage, \unit{\volt}; \(N_1\) stands for the number of coils on the primary coil, dimensionless; \(N_2\) stands for the number of coils on the secondary coil, dimensionless.
 
-                \WordExpl The coil voltage is proportional to the number of coils on that respective coil.
+            \WordExpl The coil voltage is proportional to the number of coils on that respective coil.
 
-                \DeriForm By conservation of energy,
-                \[
-                    I_1 N_1 = I_2 N_2.
-                \]
+            \DeriForm By conservation of energy,
+            \[
+                I_1 N_1 = I_2 N_2.
+            \]
 
-                \Note This is a very simple equation, so don't get it wrong! Be careful with the corresponding primary and secondary.
-
-                \item \textbf{Coulomb's Law:} (qualitative required)
-                \[
-                    \vect{F} = \frac{1}{4 \pi \varepsilon_0} \frac{Q q}{r^2} \vect{l}.
-                \]
-                \MeanSymb \(\vect{F}\) stands for the attraction received by \(q\) caused by the electrical field created by \(Q\), \unit{\newton}; \(\varepsilon_0\) stands for the electrical permittivity in vacuum, \(\varepsilon_0 = \qty{8.85 e -12}{\farad \per \metre}\); \(Q\) stands for the charge causing the force, \unit{\coulomb}; \(q\) stands for the charge receiving the force, \unit{\coulomb}; \(r\) stands for the distance between \(Q\) and \(q\), \unit{\metre}; \(\vect{l}\) stands for the unit vector pointing from \(Q\) to \(q\) (which basically states the direction), dimensionless.
-
-                \WordExpl The electrostatic force between two charges is proportional to the product of those two charges and inversely proportional to the distance between them squared, with attraction if different symbols charge and repulsion if the same symbol of charge.
-
-                \Note This is also an inverse square law! Please remember electromagnetic forces are not caused directly by the particles but by field interactions.
-
-                \item \textbf{Electrical Field:} (qualitative (and diagram) description required, formula not required at this stage)
-                \[
-                    \vect{E} = \frac{\vect{F}}{q} = \frac{1}{4 \pi \varepsilon_0} \frac{Q}{r^2} \vect{l}.
-                \]
-                \MeanSymb \(\vect{E}\) stands for the electrical field (a vector field), \unit{\volt\per\metre}; \(\vect{F}\) stands for the attraction received by \(q\) caused by the electrical field created by \(Q\), \unit{\newton}; \(\varepsilon_0\) stands for the electrical permittivity in a vacuum, \(\varepsilon_0 = \qty{8.85 e -12}{\farad \per \metre}\); \(Q\) stands for the charge causing the force, \unit{\coulomb}; \(q\) stands for the charge receiving the force, \unit{\coulomb}; \(r\) stands for the distance between \(Q\) and \(q\), \unit{\metre}; \(\vect{l}\) stands for the unit vector pointing from \(Q\) to \(q\) (which states the direction), dimensionless.
-
-                \WordExpl The electrical field is defined by the force received per unit charge.
-
-                \Note \(\vect{E}\) is a vector field, which means there is a vector at any point in the space. Field lines can represent most vector fields.
-
-                \item \textbf{Potential Difference and Electrical Field:} (not required, just me being a nerd)
-                \[
-                    \vect{E} = - \nabla V.
-                \]
-
-                \MeanSymb \(\vect{E}\) stands for the electrical field, \unit{\volt \per \metre}; \(\nabla\) stands for the 3-D gradient operator, \unit{\per \metre}; \(V\) stands for the voltage, \unit{\volt}.
-
-                \WordExpl The electrical field is equal to the opposite of the gradient in voltage.
-
-                \Note The definition of the \(\nabla\), in fact a 3-D gradient:
-                \[
-                    \frac{\hat{\vect{x}} \partial}{\partial x} + \frac{\hat{\vect{y}} \partial}{\partial y} + \frac{\hat{\vect{z}} \partial}{\partial z}.
-                \]
-                \item \textbf{Magnetic Force on Current-Carrying Conductor:} (qualitative required)
-                \[
-                    \vect{F} = \vect{B} I \times \vect{l}.
-                \]
-                \MeanSymb \(\vect{F}\) stands for the magnetic force received by the wire, \unit{\newton}; \(\vect{B}\) stands for the magnetic field (to be precise, magnetic flux density field), \unit{\tesla}; \(I\) stands for the current, \unit{\ampere}; \(\vect{l}\) stands for the vector pointing from the start of the wire to the end of wire (direction defined by the current), \unit{\metre}.
-
-                \WordExpl The magnitude of the force the current-carrying wire receives is proportional to the strength of the magnetic field, the current and its length, and its direction will satisfy Flemming's LH rule (cross product).
-
-                \DeriForm Let \(\theta\) be the angle between the wire and the magnetic field, we have
-                \[
-                    F = BIl \sin \theta.
-                \]
-
-                \Note This is cool, and this could be used to define the \(\vect{B}\) field. The cross product simply represents the direction without the need to use the Cartesian coordinate formed by Flemming's LH rule.
-
-                \item \textbf{Lorentz Force (for a charge moving in a magnetic field):} (qualitative required)
-                \[
-                    \vect{F} = q\vect{v} \times \vect{B}.
-                \]
-                \MeanSymb \(\vect{F}\) stands for the magnetic force received by the charge, \unit{\newton}; \(q\) stands for the charge, \unit{\coulomb}; \(\vect{v}\) stands for the velocity of the charge, \unit{\metre\per\second}; \(\vect{B}\) is the magnetic field, \unit{\tesla}.
-
-                \WordExpl The magnitude of the magnetic force received by a charge is proportional to its charge, its velocity and the strength of the magnetic field, with its direction fitting Flemming's LH rule.
-
-                \DeriForm Let \(\theta\) be the angle between the velocity and the magnetic field, we have
-                \[
-                    F = qvB \sin \theta.
-                \]
-
-                \Note Based on the cross product, unsurprisingly, the Lorentz Force does not do work on the charge (as the force is always perpendicular to the velocity of charge hence no power and no work), and a charge will do circular motion in a uniform magnetic field (cool!). Note that when we use Flemming's LH rule on a charge which is negative, we need to reverse its velocity to get its current.
-
-                \item \textbf{Magnetic Flux:} (not required at this stage)
-                \[
-                    \Phi = \vect{B} \cdot \vect{S}.
-                \]
-                \MeanSymb \(\Phi\) stands for the magnetic flux, \unit{\weber} or \unit{\volt \second} or \unit{\tesla \metre \squared}; \(\vect{B}\) stands for the magnetic flux density, \unit{\tesla}; \(\vect{S}\) stands for the surface vector (direction perpendicular to the surface), \unit{\metre\squared}.
-
-                \WordExpl The magnetic flux is the dot product of the magnetic flux density and the surface (as the name suggests).
-
-                \DeriForm Let \(\theta\) be the angle between the surface vector and the magnetic field, we have
-                \[
-                    \Phi = BS \cos \theta.
-                \]
-
-                Furthermore,
-                \[
-                    \Phi = \iint_{\Sigma} \vect{B} \cdot \diff \vect{S}.
-                \]
-
-                \Note This will be useful for the next part: Faraday's Law of Induction.
-
-                \item \textbf{Faraday's Law of Induction:} (with Lenz's Law) (qualitative required)
-                \[
-                    E = -N \frac{\Delta \Phi}{\Delta t}
-                \]
-                \MeanSymb \(E\) stands for the e.m.f. created, \unit{\volt}; \(N\) stands for the number of coils, dimensionless; \(\Delta \Phi\) stands for the change in magnetic flux, \unit{\weber}; \(\Delta t\) stands for time elapsed, \unit{\second}.
-
-                \WordExpl The electromotive force created by a coil cutting through the magnetic field lines is proportional to the number of turning coils it has and the rate of change in magnetic flux (i.e. the rate cutting across magnetic field lines), and by Lenz's Law will have a direction opposing the change causing it.
-
-                \Note This is the reason why the generator creates a.c. current.
-
-                \item \textbf{Poynting Vector:} (not required, stands for direction of energy transfer in an electromagnetic wave)
-                \[
-                    \vect{S} = \frac{1}{\mu_0} \vect{E} \times \vect{B}.
-                \]
-
-                \MeanSymb \(\vect{S}\) stands for the Poynting Vector, \unit{\watt \per \metre \squared}; \(\mu_0\) stands for the vacuum magnetic permeability, \(\mu_0 = \qty{1.26 e -6}{\newton \per \ampere \squared}\); \(\vect{E}\) stands for the electrical field, \unit{\volt \per \metre}l; \(\vect{B}\) stands for the magnetic field, \unit{\tesla}.
-
-                \WordExpl The Poynting Vector is defined as the cross product of the electrical field and the magnetic field over the vacuum magnetic permeability.
-
-                \Note It represents the directional energy flux (the energy transfer per unit area per unit time), and demonstrates why an electromagnetic wave is a transverse wave. 
-                
-                \item \textbf{Maxwell's Equations:} (the boss of everything, not required)
-                
-                \begin{align*}
-                    \nabla \cdot \vect{E} &= \frac{\rho}{\varepsilon_0},\\
-                    \nabla \cdot \vect{B} &= 0,\\
-                    \nabla \times \vect{E} &= - \frac{\partial \vect{B}}{\partial t},\\
-                    \nabla \times \vect{B} &= \mu_0 \left(\vect{J} + \varepsilon_0 \frac{\partial \vect{E}}{\partial t}\right).
-                \end{align*}
-
-                \MeanSymb \(\nabla \cdot\) stands for the divergence, which means 'the source of a field', \unit{\per\metre}; \(\nabla \times\) stands for the curl, which means 'the circulation of a field', \unit{\per\metre}; \(\varepsilon_0\) stands for vacuum electrical permittivity, \unit{\farad\per\metre}; \(\mu_0\) stands for the vacuum magnetic permeability, \unit{\newton \per \ampere \squared}; \(\rho\) stands for the charge density, \unit{\coulomb\per\metre\cubed}; \(t\) stands for time, \unit{\second}; \(\vect{E}\) stands for the electrical field, \unit{\volt\per\metre}; \(\vect{B}\) stands for the magnetic flux density, \unit{\tesla}; \(\vect{J}\) stands for the current density, \unit{\ampere\per\metre\squared}.
-
-                \WordExpl Electrical field has a source, but a magnetic field does not; a magnetic field causes an effect on electrical fields, and vice versa.
-                \begin{enumerate}
-                    \item \textbf{Gauss's Law:} Electrical field has a source which is caused by a charge.
-                    \item \textbf{Gauss's Law for Magnetism:} Magnetic field does not have a source (i.e. magnetic monopole doesn't exist).
-                    \item \textbf{Faraday's Law of Induction:} Electrical field is caused by a changing magnetic field, and its strength is proportional to the rate of change in magnetic flux.
-                    \item \textbf{Ampere's Circuital Law:} Magnetic field is caused by a changing electrical field (but remember that electrical charge can exist individually and that's why the current density term exists).
-                \end{enumerate}
-
-                \DeriForm The integration version: (longer)
-                \begin{align*}
-                    \oiint_{\partial \Omega} \vect{E} \cdot \diff \vect{S} &= \frac{1}{\varepsilon_0} \iiint_{\Omega} \rho \diff V,\\
-                    \oiint_{\partial \Omega} \vect{B} \cdot \diff \vect{S} &= 0,\\
-                    \oint_{\partial \Sigma} \vect{E} \cdot \diff \vect{l} &= - \frac{\diff}{\diff t} \iint_{\Sigma} \vect{B} \cdot \diff \vect{S},\\
-                    \oint_{\partial \Sigma} \vect{B} \cdot \diff \vect{l} &= \mu_0 \left(\iint_{\Sigma} \vect{J} \cdot \diff \vect{S} + \varepsilon_0 \frac{\diff}{\diff t} \iint_{\Sigma} \vect{E} \cdot \diff \vect{S}\right).
-                \end{align*}
-
-                \Note Well I can't calculate all this but it's cool, isn't it? Just like Einstein's field equation. There is no reason (so far) for magnetic monopole not to exist but we haven't found it yet. The equations can be very slightly adjusted for a magnetic field to exist. In terms of symmetry, I would love magnetic monopoles to exist!
-            \end{enumerate}
-
-            \textbf{Electromagnetism is one of the coolest parts of Physics, but due to the limitation of Mathematical tools, we can only stop here. (Sorry if this confused you, you just need to know the first one (transformer) for GCSE!) Well actually I just wrote the Physics I like.}
+            \Note This is a very simple equation, so don't get it wrong! Be careful with the corresponding primary and secondary.
 
     \section{Space Physics}
         \subsection{Orbits}
@@ -852,6 +620,6 @@
         
         I would like to give special thanks to Mr Blundell, my current Physics teacher, and Dr Yun, my tutor for providing me with all this knowledge.
 
-        Finally, I hope this helped you to gain a better understanding of Physics. Feel free to email \href{eason.syc@icloud.com}{eason.syc@icloud.com} to send me feedback.
+        Finally, I hope this helped you to gain a better understanding of Physics. Feel free to email \href{yicheng\_shao@oxcoll.com}{yicheng\_shao@oxcoll.com} to send me feedback.
 
 \end{document}

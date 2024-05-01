@@ -6,3 +6,5 @@
  I am also an IGCSE student so errors are inevitable in this document. Feel free to email me to point out any mistakes or submit an issue on the GitHub page!
 
  P.S. I want to try my best to include quantitative formulae for qualitative requirements at GCSE, but they usually require more Mathematical tools so it is normal to have unexpected symbols.
+
+ This is the simplified version with only the formulae you are required to use to calculate. Vector notations are still present just for the sake of science.
